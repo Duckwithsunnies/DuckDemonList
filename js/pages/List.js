@@ -25,7 +25,7 @@ export default {
                 <table class="list" v-if="list">
                     <tr v-for="([level, err], i) in list">
                         <td class="rank">
-                            <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
+                            <p v-if="i + 1 <= 100" class="type-label-lg">#{{ i + 1 }}</p>
                             <p v-else class="type-label-lg">Legacy</p>
                         </td>
                         <td class="level" :class="{ 'active': selected == i, 'error': !level }">
@@ -53,6 +53,9 @@ export default {
                         <li>
                             <div class="type-title-sm">Password</div>
                             <p>{{ level.password || 'Free to Copy' }}</p>
+                        </li>
+                            <div class="type-title-sm">Handcam</div>
+                            <p>{{ level.handcam || 'Not Required' }}</p>
                         </li>
                     </ul>
                     <h2>Records</h2>
@@ -100,29 +103,28 @@ export default {
                     </template>
                     <h3>Submission Requirements</h3>
                     <p>
-                        Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
+                        Megahack/Mod client rules here:  https://docs.google.com/spreadsheets/d/1qIuvQXrbIG2V9KL3PqT80ib7l2FWAq1aqc6ZYQ5xBfc/preview
                     </p>
                     <p>
                         Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
                     </p>
                     <p>
-                        Have either source audio or clicks/taps in the video. Edited audio only does not count
-                    </p>
-                    <p>
-                        The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this
+                        You must have clear clicks that you can hear. If we can't hear your clicks then your record will be denied
                     </p>
                     <p>
                         The recording must also show the player hit the endwall, or the completion will be invalidated.
                     </p>
                     <p>
-                        Do not use secret routes or bug routes
+                        You may not use secret routes. (Some may be accepted)
                     </p>
                     <p>
-                        Do not use easy modes, only a record of the unmodified level qualifies
+                        You may not edit the level in anyway.
                     </p>
                     <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
+                        If the level you beat is in the legacy list you can only submit completions
                     </p>
+                    <p>
+                        Link to submition: https://docs.google.com/forms/d/1YIvS_lUtOzOMW3OXqBCiUXIK8PM8Ti5f036Ao3dL-vk/preview
                 </div>
             </div>
         </main>
