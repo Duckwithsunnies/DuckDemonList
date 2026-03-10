@@ -3,7 +3,7 @@
     "name": "Tidal Wave",
     "Publisher": "OniLink", "Host": "OniLink",
     "verifier": "Zoink",
-    "video": "https://www.youtube.com/watch?v=mgQL2xeviN8",
+    "showcase": "https://www.youtube.com/watch?v=mgQL2xeviN8",
     "percentToQualify": 60,
     "Records": [
         {
