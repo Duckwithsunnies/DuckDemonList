@@ -7,8 +7,8 @@
     "percentToQualify": 60,
     "Records": [
         {
-            "User": "User1"
-            "Link": "Link"
+            "User": "User1",
+            "Link": "Link",
             "Progress": "100%"
             
         }
